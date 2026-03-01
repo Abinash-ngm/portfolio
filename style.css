@@ -1,0 +1,102 @@
+/* General */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    background: linear-gradient(135deg, #e3f2fd, #fce4ec);
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #1e3c72, #2a5298);
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* Sections */
+section {
+    background: white;
+    margin: 30px auto;
+    padding: 25px;
+    width: 80%;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    animation: fadeUp 1s ease;
+}
+
+/* Headings */
+h2 {
+    color: #1e3c72;
+}
+
+/* Skills */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+    background: linear-gradient(135deg, #3498db, #6dd5fa);
+    color: white;
+    padding: 10px 18px;
+    margin: 6px;
+    border-radius: 30px;
+    font-size: 14px;
+    transition: transform 0.3s;
+}
+
+li:hover {
+    transform: scale(1.1);
+}
+
+/* Projects */
+.project {
+    border-left: 5px solid #1e3c72;
+    padding-left: 15px;
+    margin-bottom: 15px;
+    transition: transform 0.3s;
+}
+
+.project:hover {
+    transform: translateX(10px);
+}
+
+/* Button */
+.btn {
+    background: linear-gradient(135deg, #00b09b, #96c93d);
+    color: white;
+    padding: 14px 26px;
+    text-decoration: none;
+    border-radius: 30px;
+    display: inline-block;
+    margin-top: 15px;
+    font-weight: bold;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.3);
+}
+
+/* Animation */
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
